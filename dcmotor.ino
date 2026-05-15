@@ -3,8 +3,8 @@
 // ========== PINS ==========
 #define MOTOR_A_IN1 18
 #define MOTOR_A_IN2 19
-#define MOTOR_B_IN1 x
-#define MOTOR_B_IN2 y
+#define MOTOR_B_IN1 21
+#define MOTOR_B_IN2 22
 
 // ========== STATE ==========
 bool isRunning = false;
