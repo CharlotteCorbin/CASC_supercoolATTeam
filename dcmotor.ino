@@ -1,13 +1,17 @@
-//Codes written with the help of claude ai. 
+//Codes written with the help of claude ai.
 
 // ========== PINS ==========
 #define MOTOR_A_IN1 18
 #define MOTOR_A_IN2 19
-#define MOTOR_B_IN1 x
-#define MOTOR_B_IN2 y
+#define MOTOR_B_IN1 21
+#define MOTOR_B_IN2 22
 
 // ========== STATE ==========
 bool isRunning = false;
+
+// ========== FUNCTION DECLARATIONS ==========
+void runMotors();
+void stopMotors();
 
 // ========== SETUP ==========
 void setup() {
@@ -42,6 +46,7 @@ void loop() {
 void runMotors() {
   digitalWrite(MOTOR_A_IN1, HIGH);
   digitalWrite(MOTOR_A_IN2, LOW);
+
   digitalWrite(MOTOR_B_IN1, HIGH);
   digitalWrite(MOTOR_B_IN2, LOW);
 }
@@ -49,6 +54,7 @@ void runMotors() {
 void stopMotors() {
   digitalWrite(MOTOR_A_IN1, LOW);
   digitalWrite(MOTOR_A_IN2, LOW);
+
   digitalWrite(MOTOR_B_IN1, LOW);
   digitalWrite(MOTOR_B_IN2, LOW);
 }
