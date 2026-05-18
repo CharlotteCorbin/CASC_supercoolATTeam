@@ -1,6 +1,6 @@
 #include <Servo.h> 
 
-const int buttonPin = 2; 
+const int buttonPin = 4; 
 const int servoPin = 9; // may need to change this servopin not very sure 
 
 const int start_POS = x; //Starting position 
